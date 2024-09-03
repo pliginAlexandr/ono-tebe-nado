@@ -4,56 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="stylesheet" href="./fonts/fonts.css">    
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/style.css">
 
-    
-    
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
-  
+
   <body>
     <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">
-            <a href="#" class="header__links-list-item header__link_active">главная</a>
+            <a href="#" class="header__links-list-item header__link_active"
+              >главная</a
+            >
           </li>
           <li class="header__link">
             <a href="#" class="header__links-list-item">посмотреть лоты</a>
           </li>
           <li class="header__link">
-            <a href="#" class="header__links-list-item">об аукционе</a> 
+            <a href="#" class="header__links-list-item">об аукционе</a>
           </li>
         </ul>
       </nav>
-      <a class="header__logo"
-      href="#">
-        <img src="./images/logo-black.svg" alt="логотип оно тебе надо" class="header__logo-image">
+      <a class="header__logo" href="#">
+        <img
+          src="./images/logo-black.svg"
+          alt="логотип оно тебе надо"
+          class="header__logo-image"
+        />
       </a>
       <address class="header__address">
         <div class="address">
-          <a href="tel:+99995555555">+9 999 555 5555</a><br>
-          <a href="mailto:info@sobaka.ge ">info@sobaka.ge</a><br>
-          <p>наб. Принсенграхт 263-<br> 265, Амстердам</p>
+          <a href="tel:+99995555555">+9 999 555 5555</a><br />
+          <a href="mailto:info@sobaka.ge ">info@sobaka.ge</a><br />
+          <p>
+            наб. Принсенграхт 263-<br />
+            265, Амстердам
+          </p>
         </div>
       </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay"></div>
-        <h1>Оно тебе надо</h1>
-        
-          
-        
+
+          <h1 class="cover__title">
+            <span class="aligned-text aligned-text_left">
+О<span class="letter-spacing-extended">н</span>о
+</span>
+<span class="aligned-text aligned-text_center">
+те<span class="letter-spacing-extended">б</span>е
+</span>
+<span class="aligned-text aligned-text_right">
+<span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span>
+</span>
+          </h1>
+        </div>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+          <button class="bet-button" type="button">Сделать ставку</button>
+        </div>
       </section>
+      <section class="lots">
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list">
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type-film">
+                <div class="overlay"></div>
+                <h3 class="card__title">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type-film">
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+              </article>
+            </a>
+          </li>
+          <li class="lots__card-list-item">
+            <a class="card-link" href="#">
+              <article class="card card_type-film">
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+              </article>
+            </a>
+          </li>
 
+        </ul>
 
-
-
-
+      </section>
     </main>
   </body>
 </html>
